@@ -1,2 +1,130 @@
-# html
-html_UOC
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cookination</title>
+    <meta name="description"
+        content="If you dont know what to cook, bookmark cookination!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-home">
+  <div class="container">
+    <header class="header">
+            <nav>
+                <div class="logo">
+                    <a class="header-logo-link" href="index.html">
+                    <img src="img/logos/logo.png" class="header-logo"
+                        alt="Cookination logo"></a>
+                </div>
+                    <!-- chequear feedback teacher -->
+                <div class="menu">
+                    <ul>
+                        <li><p><a href="recipes.html">Recipes</a></p></li>
+                        <li><p><a href="shop.html">Shop</a></p></li>
+                        <li><p><a href="videos.html">Videos</a></p></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+            <div class="search">
+                <h1>What are we cooking today?</h1>
+                <form>
+                  <div>
+                    <input type="search" id="mySearch" name="q"
+                     placeholder="Search for a meal...">
+                  </div>
+                </form>
+            </div>
+
+            <article>
+                    <h2 id="latest">Latest Meals</h2>
+
+                    <div class="meals">
+                        <figure>
+                            <a href="#"> <img src="img/meals/chivito.jpg" alt="chivito uruguayo"></a>
+                            <figcaption>chivito uruguayo</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="img/meals/lamb-peka.jpg" alt="Croatian lamb peka"></a>
+                           <figcaption>Croatian lamb peka</figcaption>
+                        </figure>
+                        <figure>
+                             <a href="#"><img src="img/meals/rocky-road.jpg" alt="rocky road fudge"></a>
+                            <figcaption>rocky road fudge</figcaption>
+                        </figure>
+                        <figure>  
+                             <a href="#"><img src="img/meals/katsudon.jpg" alt="Japanese Katsudon"></a>
+                            <figcaption>Japanese Katsudon</figcaption>
+                        </figure>
+                    </div>
+            </article>
+
+            <article class="shop">
+                <div class="box">
+                    <h2 id="shop">Shop</h2>
+                    <p>Curious what equipment and pantry staples we love?</p>
+                    <p>Check out our shop, where we share our go-to and recommend appliances, ingredients, tools, and more!</p>
+                    <p><a href="shop.html">Shop our recommendations</a></p>
+                </div>
+            </article>
+
+            <article class="pick">
+                <div class="pick_text">
+                    <p>PICK OF THE WEEK</p>
+                    <h2>Mini Chicken pot pies</h2>
+                    <p>When it’s cold and rainy outside there’s nothing better than a chicken pot pie. But if you’re gluten-free or paleo it can be hard to find a delicious recipe that gets you excited and tastes as good as the traditional version. Well, I think this recipe is gonna get you excited.</p>
+                    <form style="display: inline" action="recipes.html" method="get">
+                      <button>View Recipe</button>
+                    </form>
+                </div>
+                <div class="pick_img">
+                    <img src="img/pick-week.jpg" alt="pick of the week">
+                </div>
+            </article>
+
+            <div class="newsletter">
+                <div class="NL_form">
+                    <h2>NEWSLETTER</h2>
+                    <form style="display: inline" action="index.html" method="get">
+                        <p>Receive a weekly email with new recipes and recommendations for your cooking</p>
+                        <input type="email" id="email" size="30" required placeholder="Your email address"> 
+                          <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+            <p class="izquierda">Simple recipes that make you feel good</p>
+            <div class="derecha">
+                <p>Follow us on</p>
+                <ul class="social">
+                    <li><a href="#"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="img/icons/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="img/icons/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="img/icons/facebook.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="legals">
+                <p class="izquierda">2022 &copy;Gustavo García Brusilovsky</p>
+                <ul class="derecha">
+                    <li><a href="">Terms and conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+            </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
